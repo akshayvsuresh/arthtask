@@ -78,8 +78,7 @@ while True:
         elif ("launched" in select) and ("running" in select) and ("instance" in select):
             wb.open("https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#Instances:")
         elif ("show" in select) and ("volume" in select):
-            wb.open(
-                "https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#Volumes:sort=desc:createTime")
+            wb.open("https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#Volumes:sort=desc:createTime")
         elif ("thank" in select) or ("stop" in select):
             pyttsx3.speak("okay  bye have a nice day.")
             break
