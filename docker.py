@@ -1,4 +1,4 @@
-def docker():
+
   import os
 
 
@@ -101,10 +101,12 @@ def docker():
     os.system("docker rmi "+imname)
 
   n=20
-  while(n!=13):
+  while True :
     print("\n\n")
+    os.system("tput setaf 7")
     print("******Welcome to the Docker CLI*********")
     print("\n")
+    os.system("tput setaf 6 ")
     print("Select an option")
     print("\n")
     print(" 1.Install Docker")
