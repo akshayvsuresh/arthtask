@@ -3,7 +3,7 @@ from getpass import getpass
 import subprocess as sp
 from linux_cmd import *
 from aws_code import *
-from dc import *
+from docker import *
 from webserver import *
 
 Password= "pw"
@@ -37,11 +37,10 @@ while True:
 	
 	if int(x) == 1:
     		lxcmd()
-    
-	elif int(x) == 2:
+    	elif int(x) == 2:
 		aws()
 	elif int(x) == 3:
-   		
+   		selectopt()
         elif int(x) == 4:
 		web()
         elif int(x) == 5:
