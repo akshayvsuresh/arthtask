@@ -1,3 +1,4 @@
+import os 
 def web():
     while True:
         os.system("tput setaf 7")
@@ -29,7 +30,7 @@ def web():
         elif int(x)==7:
             i=input("Enter url to see website")
             import webbrowser
-            webbrowser.open("x")
+            webbrowser.open("http://{}".format(i))
         else:
             os.system("tput setaf 1")
             print("Invalid Option")
