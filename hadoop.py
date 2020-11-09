@@ -25,9 +25,9 @@ def hadoop():
 	
         elif int(x)==4:
             hadooplink = input("Enter your s3 bucket link for hadoop")
-            jdklink = input("Enter your s3 bucket link for hadoop")
-            hadooplink = "/usr/local/bin/aws s3 cp" + hadooplink
-            jdklink = "/usr/local/bin/aws s3 cp" + jdklink
+            jdklink = input("Enter your s3 bucket link for jdk")
+            hadooplink = "/usr/local/bin/aws s3 cp " + hadooplink
+            jdklink = "/usr/local/bin/aws s3 cp " + jdklink
             list1 = ["sudo rpm -ivh jdk-8u171-linux-x64.rpm","sudo rpm -ivh jdk-8u171-linux-x64.rpm","sudo rpm -ivh hadoop-1.2.1-1.x86_64.rpm --force"]
             for k in list1:
                 os.system(k)
