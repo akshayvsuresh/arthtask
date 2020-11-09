@@ -1,8 +1,9 @@
 import os 
+import subprocess as sp 
 def hadoop():
     while True:
         os.system("tput setaf 7")
-        print("\t\Install and configure Hadoop\n")
+        print("Install and configure Hadoop\n")
         os.system('tput setaf 7')
         print(" 1. Check if AWS CLI is installed
 2. Install AWSCLI
@@ -14,7 +15,10 @@ def hadoop():
 
         x = input("Enter Choice: ")
         if int(x)==1:
-            os.system("aws --version")
+	    output = sp.getoutput('aws --version')
+	    if output == "sh: aws: command not found":
+                print("AWS CLI not installed")  
+  
         elif int(2)==2:
             list = ['''curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"''', "sudo yum install -y unzip","sudo unzip awscliv2.zip","sudo ./aws/install"]
             for i in list:
