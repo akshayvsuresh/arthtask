@@ -5,6 +5,7 @@ from linux_cmd import *
 from aws_code import *
 from docker import *
 from webserver import *
+from hadoop import * 
 
 Password= "pw"
 
@@ -29,6 +30,7 @@ while True:
 	\t\tPress 2 : For using AWS services
 	\t\tPress 3 : For Docker
 	\t\tPress 4 : For Configure WebServer
+        \t\tPress 5 : For Hadoop
 	""")
 	
 	os.system("tput setaf 2")
@@ -44,6 +46,7 @@ while True:
         elif int(x) == 4:
 		web()
         elif int(x) == 5:
+                hadoop ()
     		
 	else:
 		print(" Choose the valid option ")
