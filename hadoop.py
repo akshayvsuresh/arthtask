@@ -16,7 +16,7 @@ def hadoop():
         if int(x)==1:
             os.system("aws --version")
         elif int(2)==2:
-            list = ["curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip", "sudo yum install -y unzip","sudo unzip awscliv2.zip","sudo ./aws/install"]
+            list = ['''curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"''', "sudo yum install -y unzip","sudo unzip awscliv2.zip","sudo ./aws/install"]
             for i in list:
                 os.system(i)
     
